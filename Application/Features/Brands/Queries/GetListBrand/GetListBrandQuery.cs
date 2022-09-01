@@ -16,6 +16,7 @@ namespace Application.Features.Brands.Queries.GetListBrand
     public class GetListBrandQuery:IRequest<BrandListModel>
     {
         public PageRequest PageRequest { get; set; }
+
         public class GetListBrandQueryHandler : IRequestHandler<GetListBrandQuery, BrandListModel>
         {
             private readonly IBrandRepository _brandRepository;
