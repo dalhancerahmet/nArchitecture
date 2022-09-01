@@ -34,6 +34,6 @@ namespace WebAPI.Controllers
            BrandGetByIdDto brandGetByIdDto = await Mediator.Send(getByIdIdBrandQuery);
            return Ok(brandGetByIdDto);
         }
-        //test
+        
     }
 }
